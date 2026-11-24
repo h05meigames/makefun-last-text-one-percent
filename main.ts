@@ -6,10 +6,11 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 // The entry: a phone on its last percent uses its final text to snitch on
-// its owner — screen time, mom left on read — then flips the blame: the
-// phone is the one dying, yet somehow the owner is the disappointment.
+// its owner — 9 hours of scrolling, mom left on read — then flips the
+// blame: the phone is the one dying, yet somehow the owner is the
+// disappointment. One snitch detail, one closing beat, no wasted words.
 const ENTRY =
-  "quick — before i go: you scrolled 9 hours today, ignored mom's 3 texts, and now i'm the one at 1%. i'm dying and somehow you're still the disappointment.";
+  "quick, before i go: you scrolled 9 hours today and left mom on read 3 times. i'm the one dying here and somehow you're still the disappointment.";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 mkdirSync(outDir, { recursive: true });
